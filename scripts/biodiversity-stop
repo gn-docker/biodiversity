@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $(/usr/bin/docker ps |grep biodiversity) ]]; then
+  /usr/bin/docker stop biodiversity
+fi
+if [[ $(/usr/bin/docker ps -a |grep biodiversity) ]]; then
+  /usr/bin/docker rm biodiversity
+fi

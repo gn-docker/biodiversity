@@ -1,0 +1,4 @@
+#/bin/bash
+
+/usr/bin/docker run -d --name biodiversity \
+  -p 0.0.0.0:4334:4334 gnames/biodiversity
